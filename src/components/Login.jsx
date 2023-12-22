@@ -28,7 +28,7 @@ const LoginForm = () => {
         const data = await response.json()
 
         console.log(data)
-        if (data.ok) {
+        if (data) {
             // localStorage.setItem("userId", userId)
             localStorage.setItem("token", data.token)
             navigate("/profile")
