@@ -28,13 +28,13 @@ const LoginForm = () => {
         const data = await response.json()
 
         console.log(data)
-        if (data) {
+        if (data.ok) {
             // localStorage.setItem("userId", userId)
             localStorage.setItem("token", data.token)
             navigate("/profile")
         }
         else {
-            alert("nessun token")
+            alert("Credenziali errate, riprova!")
         }
     };
 
