@@ -142,7 +142,7 @@ export default function NavBar() {
             {/* Notifications */}
             <Nav.Item>
               <Link
-                to={token === null || !token ? "/" : `/profile`}
+                to={token === null ? "/" : `/profile`}
                 className="d-flex flex-column align-items-center justify-content-between nav-link active"
               >
                 <div className="position-relative">
