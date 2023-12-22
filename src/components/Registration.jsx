@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Container, Row, Col, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 
 const RegistrationForm = () => {
@@ -143,6 +144,11 @@ const RegistrationForm = () => {
                         <Button variant="primary" type="submit" className='mt-2'>
                             Registrati
                         </Button>
+                        <Link to={"/"}>
+                        <Button variant="primary" type="button" className='mt-2 ms-2'>
+                            Login
+                        </Button>
+                        </Link>
                     </Form>
                 </Col>
             </Row>
