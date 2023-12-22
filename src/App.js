@@ -18,7 +18,6 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-
           <Route path="/" element={<LoginForm />} />
           <Route path="/profile" element={<Main />} />
           <Route path="/profile/:id" element={<ProfileDetail />} />
